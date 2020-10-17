@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Text;
-
-namespace partial
+﻿namespace partial
 {
     public partial class Complex
     {
