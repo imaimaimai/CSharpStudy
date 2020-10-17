@@ -6,16 +6,29 @@ namespace Constructor
         public string name;
         public int age;
 
-        public Person()
-        {
-            this.name = "taro";
-            this.age = 100000;
-        }
+        const int unknown = -1;
+        const string defaultName = "名無しさん";
+
+        //public Person()
+        //{
+        //    this.name = "taro";
+        //    this.age = 100000;
+        //}
 
         public Person(string name, int age)
         {
             this.name = name;
-            this.age = age;
+            this.age = age > 0 ? age: unknown;
+        }
+
+        public Person(string name): this(name, unknown)
+        {
+
+        }
+
+        public Person(): this(null,unknown)
+        {
+
         }
     }
 }
