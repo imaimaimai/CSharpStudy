@@ -26,6 +26,8 @@ namespace Constructor
 
         }
 
+
+        // コンストラクター初期化子。別のコンストラクターを呼び出すことができる
         public Person(): this(null,unknown)
         {
 
